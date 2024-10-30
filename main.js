@@ -75,15 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
   tl.to(".preloader.white", {
     delay: 2,
     clipPath: "inset(0 100% 0 0)", // Animate white preloader out
-  })
+  }, "-=.25")
   .to(".preloader.black", {
     clipPath: "inset(0 100% 0 0)", // Animate black preloader out
-    delay: 0.2, // Small delay for smoother transition
+    // delay: 0.2, // Small delay for smoother transition
   })
   .fromTo(
     ".text-header, .text-small",
     { clipPath: "inset(100% 0 0 0)" }, // Start with text hidden at bottom
-    { clipPath: "inset(0 0 0 0)", duration: 1 } // Reveal text with a slower effect
+    { clipPath: "inset(0 0 0 0)", duration: 1 }, "-=.5" // Reveal text with a slower effect
   ).fromTo(".subject", 
     {opacity:0, scale:0.8},
     {opacity:1, scale:1, duration:2.5}

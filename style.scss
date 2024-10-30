@@ -46,14 +46,14 @@ nav, .container {
   overflow:hidden;
 
   &.black {
-    background: #000;
+    background: #303c4c;
     clip-path: inset(0 0 0 0);
 
 
   }
 
   &.white {
-    background: #fff;
+    background: #101417;
     clip-path: inset(0 0 0 0);
     display: grid;
     place-content: center center;
@@ -72,11 +72,11 @@ nav, .container {
 .loading {
   --speed-of-animation: 0.9s;
   --gap: 6px;
-  --first-color: #000000;
+  --first-color: #303c4c;
   --second-color: #272727;
   --third-color: #acacac;
   --fourth-color: #9e9e9e;
-  --fifth-color: #3b3b3b;
+  --fifth-color: #303c4c;
   display: flex;
   justify-content: center;
   align-items: center;
